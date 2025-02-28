@@ -50,7 +50,7 @@ async function main() {
       },
     });
 
-    const shuffledTracks = allTracks.sort(() => 0.5 - Math.random()).slice(0, 5);
+    const shuffledTracks = allTracks.sort(() => 0.5 - Math.random()).slice(0, 8);
     for (const track of shuffledTracks) {
       await prisma.playlistTrack.create({
         data: {
